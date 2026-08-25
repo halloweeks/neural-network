@@ -10,6 +10,8 @@ It is **not intended to produce hyper-realistic images**. The generated faces ar
 
 - **Architecture:** Fully Connected Autoencoder (Encoder + Decoder)
 - **Network:** `2352 → 256 → 32 → 256 → 2352`
+- **Training Dataset:** 8,000 images
+- **Training Image Size:** 28×28 RGB
 - **Input:** 28×28 RGB image
 - **Output:** 28×28 RGB image
 - **Hidden Layer 1:** 256 neurons
