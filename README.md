@@ -6,6 +6,19 @@ The network is trained to learn facial image patterns and generate new **28×28 
 
 It is **not intended to produce hyper-realistic images**. The generated faces are simple and low-resolution, but the model demonstrates how a neural network can learn visual patterns from training data and generate new outputs.
 
+## Model Details
+
+- **Architecture:** Fully Connected Neural Network
+- **Input:** 28×28 RGB image
+- **Output:** 28×28 RGB image
+- **Parameters:** ~1.2 million
+- **Model size:** ~4.66 MB
+- **Model format:** Binary (`model.bin`)
+- **Implementation:** C
+- **Framework:** None
+- **Image format:** BMP
+- **Image resolution:** 28×28
+
 ### Build
 
 Compile with GCC:
