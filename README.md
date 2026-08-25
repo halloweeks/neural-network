@@ -8,16 +8,18 @@ It is **not intended to produce hyper-realistic images**. The generated faces ar
 
 ## Model Details
 
-- **Architecture:** Fully Connected Encoder/Decoder
+- **Architecture:** Fully Connected Autoencoder (Encoder + Decoder)
 - **Network:** `2352 → 256 → 32 → 256 → 2352`
 - **Input:** 28×28 RGB image
 - **Output:** 28×28 RGB image
 - **Hidden Layer 1:** 256 neurons
 - **Latent Layer:** 32 neurons
 - **Hidden Layer 2:** 256 neurons
-- **Total Parameters:** 1,221,504
-- **Weights:** 1,220,608
-- **Biases:** 2,896
+- **Total Parameters:** 1,223,504
+- **Total Weights:** 1,220,608
+- **Total Biases:** 2,896
+- **Encoder Parameters:** 610,592
+- **Decoder Parameters:** 612,912
 - **Model Size:** ~4.67 MiB
 - **Data Type:** 32-bit floating point (`float`)
 - **Activation:** Sigmoid
