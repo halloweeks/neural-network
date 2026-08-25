@@ -8,16 +8,22 @@ It is **not intended to produce hyper-realistic images**. The generated faces ar
 
 ## Model Details
 
-- **Architecture:** Fully Connected Neural Network
+- **Architecture:** Fully Connected Encoder/Decoder
+- **Network:** `2352 → 256 → 32 → 256 → 2352`
 - **Input:** 28×28 RGB image
 - **Output:** 28×28 RGB image
-- **Parameters:** ~1.2 million
-- **Model size:** ~4.66 MB
-- **Model format:** Binary (`model.bin`)
+- **Hidden Layer 1:** 256 neurons
+- **Latent Layer:** 32 neurons
+- **Hidden Layer 2:** 256 neurons
+- **Total Parameters:** 1,221,504
+- **Weights:** 1,220,608
+- **Biases:** 2,896
+- **Model Size:** ~4.67 MiB
+- **Data Type:** 32-bit floating point (`float`)
+- **Activation:** Sigmoid
+- **Model File:** `model.bin`
 - **Implementation:** C
 - **Framework:** None
-- **Image format:** BMP
-- **Image resolution:** 28×28
 
 ### Build
 
